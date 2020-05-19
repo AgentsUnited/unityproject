@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9448878e2e40f1a4c9f8fd2b56832b13, type: 3}
+  m_Name: Kaboom
+  m_EditorClassIdentifier: 
+  recipeType: Standard
+  DisplayValue: 
+  compatibleRaces: []
+  wardrobeRecipeThumbs: []
+  wardrobeSlot: None
+  Hides: []
+  suppressWardrobeSlots: []
+  activeWardrobeSet:
+  - slot: Eyebrows
+    recipe: MaleBrowHR
+  - slot: Hair
+    recipe: MaleHair2
+  - slot: Beard
+    recipe: MaleBeard3
+  - slot: Feet
+    recipe: MaleRobe Shoes
+  - slot: Hands
+    recipe: MaleHandsMid
+  - slot: Chest
+    recipe: MaleRobe
+  recipeString: '{"version":3,"packedSlotDataList":[],"slotsV2":[],"slotsV3":[{"id":"MaleEyes","scale":100,"copyIdx":-1,"overlays":[{"id":"Eye
+    Overlay","colorIdx":5,"rect":[0,0,0,0],"data":[]},{"id":"Default Eye Adjust","colorIdx":2,"rect":[0,0,0,0],"data":[]}]},{"id":"MaleInnerMouth","scale":100,"copyIdx":-1,"overlays":[{"id":"InnerMouth","colorIdx":6,"rect":[0,0,0,0],"data":[]}]},{"id":"M_High
+    poly Head","scale":100,"copyIdx":-1,"overlays":[{"id":"M_Face","colorIdx":0,"rect":[0,0,0,0],"data":[]},{"id":"MaleBeard03","colorIdx":1,"rect":[512,0,1024,512],"data":[]}]},{"id":"","scale":1,"copyIdx":-1,"overlays":[]},{"id":"MaleHair1","scale":100,"copyIdx":-1,"overlays":[{"id":"MeshHairStd","colorIdx":1,"rect":[0,0,0,0],"data":[]}]},{"id":"M_Eyebrow","scale":100,"copyIdx":-1,"overlays":[{"id":"M_Eyebrow","colorIdx":1,"rect":[0,0,0,0],"data":[]}]},{"id":"M_Freebie
+    Robeset Robe_Slot","scale":100,"copyIdx":-1,"overlays":[{"id":"M_Freebie Robeset
+    Robe","colorIdx":5,"rect":[0,0,0,0],"data":[]},{"id":"M_Freebie Robeset Robe AC","colorIdx":4,"rect":[0,0,0,0],"data":[]}]},{"id":"UMA_Human_Male_Hands_HQ","scale":100,"copyIdx":-1,"overlays":[{"id":"M_Bod
+    Overlay 1","colorIdx":0,"rect":[0,0,0,0],"data":[]}]},{"id":"M_Freebie Robeset
+    Boots_Slot","scale":100,"copyIdx":-1,"overlays":[{"id":"M_Freebie Robeset Boots","colorIdx":5,"rect":[0,0,0,0],"data":[]}]}],"colors":[],"fColors":[{"name":"Skin","colors":[112,107,105,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"Hair","colors":[71,71,71,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"Eyes","colors":[253,67,13,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,34,31,31,154]},{"name":"Shirt","colors":[56,30,8,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"ShirtAccent","colors":[247,208,105,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,191,191,191,128]},{"name":"-","colors":[255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]},{"name":"-","colors":[234,234,234,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]}],"sharedColorCount":5,"race":"HumanMale","packedDna":[{"dnaType":"UMADnaHumanoid","dnaTypeHash":-212795365,"packedDna":"{\"height\":107,\"headSize\":146,\"headWidth\":136,\"neckThickness\":127,\"armLength\":137,\"forearmLength\":126,\"armWidth\":105,\"forearmWidth\":151,\"handsSize\":110,\"feetSize\":139,\"legSeparation\":109,\"upperMuscle\":165,\"lowerMuscle\":109,\"upperWeight\":141,\"lowerWeight\":153,\"legsSize\":140,\"belly\":158,\"waist\":116,\"gluteusSize\":117,\"earsSize\":127,\"earsPosition\":118,\"earsRotation\":105,\"noseSize\":93,\"noseCurve\":153,\"noseWidth\":111,\"noseInclination\":164,\"nosePosition\":149,\"nosePronounced\":123,\"noseFlatten\":110,\"chinSize\":152,\"chinPronounced\":102,\"chinPosition\":125,\"mandibleSize\":127,\"jawsSize\":129,\"jawsPosition\":115,\"cheekSize\":109,\"cheekPosition\":143,\"lowCheekPronounced\":91,\"lowCheekPosition\":116,\"foreheadSize\":142,\"foreheadPosition\":161,\"lipsSize\":101,\"mouthSize\":134,\"eyeRotation\":105,\"eyeSize\":104,\"breastSize\":124}"},{"dnaType":"UMADnaTutorial","dnaTypeHash":-1679007774,"packedDna":"{\"eyeSpacing\":110}"}],"wardrobeSet":[{"slot":"Eyebrows","recipe":"MaleBrowHR"},{"slot":"Hair","recipe":"MaleHair2"},{"slot":"Beard","recipe":"MaleBeard3"},{"slot":"Feet","recipe":"MaleRobe
+    Shoes"},{"slot":"Hands","recipe":"MaleHandsMid"},{"slot":"Chest","recipe":"MaleRobe"}],"packedRecipeType":"Standard"}'

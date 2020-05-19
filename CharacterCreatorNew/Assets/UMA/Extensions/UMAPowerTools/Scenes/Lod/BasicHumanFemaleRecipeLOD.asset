@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f280009f154db428cdc359dc8bc265, type: 3}
+  m_Name: BasicHumanFemaleRecipeLOD
+  m_EditorClassIdentifier: 
+  Conversions:
+  - SourcePieceName: FemaleEyelash
+    DestinationPieceName: FemaleEyelash
+    LODLevel: 0
+    groupInt: 0
+  - SourcePieceName: FemaleHead_Head
+    DestinationPieceName: FemaleHead_Head
+    LODLevel: 0
+    groupInt: 0
+  - SourcePieceName: FemaleHead_Head
+    DestinationPieceName: FemaleFace
+    LODLevel: 2
+    groupInt: 0
+  - SourcePieceName: FemaleEyelash
+    DestinationPieceName: 
+    LODLevel: 2
+    groupInt: 0
+  - SourcePieceName: FemaleHead_Ears
+    DestinationPieceName: FemaleHead_Ears
+    LODLevel: 0
+    groupInt: 0
+  - SourcePieceName: FemaleHead_Ears
+    DestinationPieceName: 
+    LODLevel: 2
+    groupInt: 0
+  - SourcePieceName: FemaleHead_ElvenEars
+    DestinationPieceName: FemaleHead_ElvenEars
+    LODLevel: 0
+    groupInt: 0
+  - SourcePieceName: FemaleHead_ElvenEars
+    DestinationPieceName: 
+    LODLevel: 2
+    groupInt: 0
+  - SourcePieceName: FemaleHead_Eyes
+    DestinationPieceName: FemaleHead_Eyes
+    LODLevel: 0
+    groupInt: 0
+  - SourcePieceName: FemaleHead_Mouth
+    DestinationPieceName: FemaleHead_Mouth
+    LODLevel: 0
+    groupInt: 0
+  - SourcePieceName: FemaleHead_Mouth
+    DestinationPieceName: 
+    LODLevel: 2
+    groupInt: 0
+  - SourcePieceName: FemaleHead_Eyes
+    DestinationPieceName: 
+    LODLevel: 2
+    groupInt: 0
+  - SourcePieceName: FemaleHead_Nose
+    DestinationPieceName: FemaleHead_Nose
+    LODLevel: 0
+    groupInt: 0
+  - SourcePieceName: FemaleHead_Nose
+    DestinationPieceName: 
+    LODLevel: 2
+    groupInt: 0
+  - SourcePieceName: EyeOverlayAdjust
+    DestinationPieceName: EyeOverlayAdjust
+    LODLevel: 0
+    groupInt: 1
+  - SourcePieceName: Expressions
+    DestinationPieceName: Expressions
+    LODLevel: 0
+    groupInt: 0
+  - SourcePieceName: Expressions
+    DestinationPieceName: 
+    LODLevel: 1
+    groupInt: 0
+  - SourcePieceName: EyeOverlayAdjust
+    DestinationPieceName: 
+    LODLevel: 2
+    groupInt: 1
