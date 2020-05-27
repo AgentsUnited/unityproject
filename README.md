@@ -1,6 +1,6 @@
 ## Unity Projects
 * **COUCHUnityProject**: The main project for displaying agents from ASAP and GRETA in one scene. This also contains a basic interface overlay for controlling moves for each of the agents and the user.
-* **CharacterCreatorNew**: Can be used to create and generate new characters, that can be imported in other projects.
+* **CharacterCreatorNew**: Can be used to create and generate new [UMA](http://umadocs.secretanorak.com/doku.php?id=start) characters, which can then be imported as ASAP or GRETA agents in other projects.
 * **OculusQuest**: A very basic proof-of-concept project that is configured to run natively on the Oculus Quest VR headset using only ASAP agents.
 * **WizardInterface**: A Wizard of Oz interface that is configured to run on an Android tablet or phone.  
 
