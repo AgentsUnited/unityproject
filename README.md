@@ -1,8 +1,8 @@
 ## Unity Projects
-* **COUCHUnityProject**:
-* **CharacterCreatorNew**:
-* **OculusQuest**:
-* **WizardInterface**:
+* **COUCHUnityProject**: The main project for displaying agents from ASAP and GRETA in one scene. This also contains a basic interface overlay for controlling moves for each of the agents and the user.
+* **CharacterCreatorNew**: Can be used to create and generate new characters, that can be imported in other projects.
+* **OculusQuest**: A very basic proof-of-concept project that is configured to run natively on the Oculus Quest VR headset using only ASAP agents.
+* **WizardInterface**: A Wizard of Oz interface that is configured to run on an Android tablet or phone.  
 
 ## Build
 The projects *COUCHUnityProject* and *OculusQuest* use some commercial 3rd party assets that cannot be made available in this repository. Please purchase and/or download these assets from the Unity Asset store and place them in  `{project}\Assets\Borg\3rdParty`:
@@ -15,9 +15,8 @@ The projects *COUCHUnityProject* and *OculusQuest* use some commercial 3rd party
 * [RootMotion Final IK](https://assetstore.unity.com/packages/tools/animation/final-ik-14290)
 
 ## Run
-1. Start Unity and open the Character Creator project.
-2. Open a Command Prompt and navigate to HmiMultiAgentAsap\java
-    1. `ant run`
+1. Start Unity and open COUCHUnityProject, then open scene Assets/Couch/CouchMain (you should see a room with 4 chairs and 2 agents).
+2. Follow the steps in the [demonstrator readme](https://github.com/AgentsUnited/demonstrator) to initialise and run the other modules that actually control the behaviour of the agents.
 
 ## Troubleshooting
 
