@@ -8,6 +8,8 @@ using System.Threading;
 using System.Linq;
 
 using ASAPToolkit.Unity.Middleware;
+using UMA;
+using ASAPToolkit.Unity.Characters;
 
 public class UIMiddlewareMoves : MonoBehaviour, IMiddlewareListener {
 
@@ -24,17 +26,29 @@ public class UIMiddlewareMoves : MonoBehaviour, IMiddlewareListener {
     public UIMiddlewareActorPanel actorPanelPrefab;
     public string uiId;
 
+    //stores a mapping for each agentId to the corresponding umadata instance
+    private Dictionary<String, UMAData> umaInstances;
+
     private List<UIMiddlewareActorPanel> actorPanels;
     public UIMiddlewareCustomActionsPanel customActionsPanel;
-
-
-
+    
     public UIMiddlewareLogs logPanel;
 
     void Awake() {
+        umaInstances = new Dictionary<String, UMAData>();
         actorPanels = new List<UIMiddlewareActorPanel>();
         middleware = GetComponent<MiddlewareBase>();
         middleware.Register(this);
+        
+        foreach(UMAAvatarBase uma in FindObjectsOfType<UMAAvatarBase>())
+        {
+            uma.CharacterCreated.AddListener(OnCreated);
+        }
+    }
+
+    void OnCreated(UMAData umaData)
+    {
+        umaInstances.Add(umaData.GetComponentInParent<BasicCharacter>().agentId, umaData);
     }
 
     void Start() {
@@ -69,6 +83,7 @@ public class UIMiddlewareMoves : MonoBehaviour, IMiddlewareListener {
         SetCustomActions(res.customActions);
         ClearUnsetPanels(keepState);
         ClearNoMoveButtons(haveMoves);
+
     }
 
     void HandleMoveStatus(UIProtocolMoveStatusUpdate res) {
@@ -145,12 +160,29 @@ public class UIMiddlewareMoves : MonoBehaviour, IMiddlewareListener {
 
     private UIMiddlewareActorPanel[] SetActorsStates(UIMiddlewareMoves.UIProtocolActor[] actors) {
         List<UIMiddlewareActorPanel> keep = new List<UIMiddlewareActorPanel>();
+        List<String> visibleActors = new List<String>();
         foreach (UIProtocolActor actor in actors) {
+            visibleActors.Add(actor.identifier);
             UIMiddlewareActorPanel panel = GetActorPanelById(actor.identifier);
             panel.SetActorState(actor);
             keep.Add(panel);
         }
+        SetActorVisibility(visibleActors);
         return keep.ToArray();
+    }
+
+    private void SetActorVisibility(List<String> visibleActors)
+    {
+        foreach(KeyValuePair<String, UMAData> uma in umaInstances)
+        {
+            if (visibleActors.Contains(uma.Key))
+            {
+                uma.Value.Show();
+            } else
+            {
+                uma.Value.Hide();
+            }
+        }
     }
 
     private UIMiddlewareActorPanel[] SetMoveSets(UIMiddlewareMoves.MoveSet[] moveSets) {
