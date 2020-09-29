@@ -30,7 +30,7 @@ public class UIMiddlewareMoveInputField : MonoBehaviour
 
     public void SetDefault()
     {
-        inputField.placeholder.GetComponent<Text>().text = move.moveID + ": enter " + move.storeInSKBVariable;
+        inputField.placeholder.GetComponent<Text>().text = move.opener;
     }
 
     public void SetMove(UIMiddlewareMoves.Move move)

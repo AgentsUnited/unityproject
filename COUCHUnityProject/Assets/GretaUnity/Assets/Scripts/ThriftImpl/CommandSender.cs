@@ -109,10 +109,19 @@ namespace thriftImpl
                         {"position.x", (-(position.x)).ToString()},
                         {"position.y", (position.y).ToString()},
                         {"position.z", (position.z).ToString()},
+
+                        /*
                         {"quaternion.x", quaternion.x.ToString()},
                         {"quaternion.y", (-quaternion.y).ToString()},
                         {"quaternion.z", (-quaternion.z).ToString()},
                         {"quaternion.w", quaternion.w.ToString()},
+                        */
+
+                        {"orientation.x", quaternion.x.ToString()},
+                        {"orientation.y", (-quaternion.y).ToString()},
+                        {"orientation.z", (-quaternion.z).ToString()},
+                        {"orientation.w", quaternion.w.ToString()},
+
                         {"scale.x", scale.x.ToString()},
                         {"scale.y", scale.y.ToString()},
                         {"scale.z", scale.z.ToString()},
@@ -159,10 +168,19 @@ namespace thriftImpl
                         {"position.x", (-(position.x + shift.x)).ToString()},
                         {"position.y", (position.y + shift.y).ToString()},
                         {"position.z", (position.z + shift.z).ToString()},
+
+                        /*
                         {"quaternion.x", quaternion.x.ToString()},
                         {"quaternion.y", (-quaternion.y).ToString()},
                         {"quaternion.z", (-quaternion.z).ToString()},
                         {"quaternion.w", quaternion.w.ToString()},
+                        */
+
+                        {"orientation.x", quaternion.x.ToString()},
+                        {"orientation.y", (-quaternion.y).ToString()},
+                        {"orientation.z", (-quaternion.z).ToString()},
+                        {"orientation.w", quaternion.w.ToString()},
+
                         {"scale.x", scale.x.ToString()},
                         {"scale.y", scale.y.ToString()},
                         {"scale.z", scale.z.ToString()},
@@ -213,11 +231,20 @@ namespace thriftImpl
                         {"position.x", (-(position.x + shift.x)).ToString()},
                         {"position.y", (position.y + shift.y).ToString()},
                         {"position.z", (position.z + shift.z).ToString()},
+
+                        /*
                         {"quaternion.x", quaternion.x.ToString()},
                         {"quaternion.y", (-quaternion.y).ToString()},
                         {"quaternion.z", (-quaternion.z).ToString()},
                         {"quaternion.w", quaternion.w.ToString()},
-                        {"scale.x", scale.x.ToString()},
+                        */
+
+                        {"orientation.x", quaternion.x.ToString()},
+                        {"orientation.y", (-quaternion.y).ToString()},
+                        {"orientation.z", (-quaternion.z).ToString()},
+                        {"orientation.w", quaternion.w.ToString()},
+
+                        { "scale.x", scale.x.ToString()},
                         {"scale.y", scale.y.ToString()},
                         {"scale.z", scale.z.ToString()},
                         {"id", gameObject.name}

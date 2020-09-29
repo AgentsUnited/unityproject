@@ -37,7 +37,7 @@ public class UIMiddlewareActorPanel : MonoBehaviour {
 		SetControlledState(actor.controlledBy.Contains(UIMiddlewareMoves.INSTANCE.uiId));
         SetCustomActions(actor.customActions);
 		// TODO: set label, etc. (this does not include the moves buttons)
-		actorNameLabel.text = actor.identifier;
+		actorNameLabel.text = actor.name;
 		// TODO: set button states...
 	}
 

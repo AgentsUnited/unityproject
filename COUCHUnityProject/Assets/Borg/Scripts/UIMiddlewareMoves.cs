@@ -180,7 +180,7 @@ public class UIMiddlewareMoves : MonoBehaviour, IMiddlewareListener {
                 uma.Value.Show();
             } else
             {
-                uma.Value.Hide();
+                //uma.Value.Hide();
             }
         }
     }
