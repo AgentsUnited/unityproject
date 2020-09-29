@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657773, g: 0.49641377, b: 0.5748175, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657773, g: 0.49641383, b: 0.57481754, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -500,11 +500,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013268158072, guid: afcdf9a75e1404740b99c5dd68331098, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4000013268158072, guid: afcdf9a75e1404740b99c5dd68331098, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012279331842, guid: afcdf9a75e1404740b99c5dd68331098, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: afcdf9a75e1404740b99c5dd68331098, type: 2}
@@ -626,7 +630,7 @@ Transform:
   - {fileID: 1021604152}
   - {fileID: 718968295}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1021604148
 GameObject:
@@ -753,11 +757,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010680304220, guid: 1ea2eae6469c23445ab0d57221ecb374, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4000010680304220, guid: 1ea2eae6469c23445ab0d57221ecb374, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013170142496, guid: 1ea2eae6469c23445ab0d57221ecb374, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ea2eae6469c23445ab0d57221ecb374, type: 2}
@@ -846,6 +854,132 @@ Transform:
   m_Father: {fileID: 718968295}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1634630508
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[0]._compatibleRaces.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[1]._compatibleRaces.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[2]._compatibleRaces.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448287033857176, guid: 84242b0e428c3e046b9470c8edcd4fcb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448287033857176, guid: 84242b0e428c3e046b9470c8edcd4fcb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448287033857176, guid: 84242b0e428c3e046b9470c8edcd4fcb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.202
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448287033857176, guid: 84242b0e428c3e046b9470c8edcd4fcb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448287033857176, guid: 84242b0e428c3e046b9470c8edcd4fcb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448287033857176, guid: 84242b0e428c3e046b9470c8edcd4fcb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448287033857176, guid: 84242b0e428c3e046b9470c8edcd4fcb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448287033857176, guid: 84242b0e428c3e046b9470c8edcd4fcb, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134088929713996, guid: 84242b0e428c3e046b9470c8edcd4fcb, type: 2}
+      propertyPath: m_Name
+      value: COUCH_F_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: context
+      value: 
+      objectReference: {fileID: 2139966605}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: activeRace.name
+      value: HumanFemaleDCS
+      objectReference: {fileID: 0}
+    - target: {fileID: 114215853378811632, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: agentId
+      value: COUCH_F_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[0]._recipeName
+      value: FemalePonyTail_Recipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[0]._compatibleRaces.Array.data[0]
+      value: HumanFemale
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[0]._compatibleRaces.Array.data[1]
+      value: HumanFemaleDCS
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[1]._recipeName
+      value: FemaleTankTop_Recipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[1]._compatibleRaces.Array.data[0]
+      value: HumanFemale
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[1]._compatibleRaces.Array.data[1]
+      value: HumanFemaleDCS
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[2]._recipeName
+      value: FemaleSportPants_Recipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[2]._compatibleRaces.Array.data[0]
+      value: HumanFemale
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173580045923878, guid: 84242b0e428c3e046b9470c8edcd4fcb,
+        type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[2]._compatibleRaces.Array.data[1]
+      value: HumanFemaleDCS
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 84242b0e428c3e046b9470c8edcd4fcb, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1674658426
 Prefab:
   m_ObjectHideFlags: 0
@@ -1099,7 +1233,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2139729601
 Prefab:
@@ -1289,7 +1423,7 @@ Prefab:
     - target: {fileID: 224021147844111404, guid: b7536db000f3d4dab9c73bb2122aee4c,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224999965167641318, guid: b7536db000f3d4dab9c73bb2122aee4c,
         type: 2}
